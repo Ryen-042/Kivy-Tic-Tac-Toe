@@ -1,0 +1,80 @@
+<Button>:
+    background_normal: ''
+    background_color: (213/255, 44/255, 184/255, 1)
+    font_size: min(root.width, root.height) * 0.95
+    size_hint: (None, None)
+
+<XO_Game>:
+    canvas:
+        Color:
+            rgba: (87/255, 1/255, 105/255, 1)
+        Rectangle:
+			pos: 0, 0
+			size: 10, self.height
+        Rectangle:
+			pos: self.width-10, 0
+			size: 10, self.height
+        Rectangle:
+            pos: 0, 0
+            size: self.width, 10
+        Rectangle:
+            pos: 0, self.height-10
+            size: self.width, 10
+
+        Rectangle:
+			pos: (self.width-10)/3, 0
+			size: 10, self.height
+		Rectangle:
+			pos: (self.width-10)/3*2, 0
+			size: 10, self.height
+
+        Rectangle:
+			pos: 0, (self.height-10)/3
+			size: self.width, 10
+		Rectangle:
+			pos: 0, (self.height-10)/3*2
+			size: self.width, 10
+
+    GridLayout:
+        size: root.width, root.height
+        cols: 3
+        padding: 10
+        spacing: 10, 10
+        Button:
+            id: b7
+            size: (root.width-40)/3, (root.height-40)/3
+            on_release: root.play(self)
+        Button:
+            id: b8
+            size: (root.width-40)/3, (root.height-40)/3
+            on_release: root.play(self)
+        Button:
+            id: b9
+            size: (root.width-40)/3, (root.height-40)/3
+            on_release: root.play(self)
+        
+        Button:
+            id: b4
+            size: (root.width-40)/3, (root.height-40)/3
+            on_release: root.play(self)
+        Button:
+            id: b5
+            size: (root.width-40)/3, (root.height-40)/3
+            on_release: root.play(self)
+        Button:
+            id: b6
+            size: (root.width-40)/3, (root.height-40)/3
+            on_release: root.play(self)
+        
+        Button:
+            id: b1
+            size: (root.width-40)/3, (root.height-40)/3
+            on_release: root.play(self)
+        Button:
+            id: b2
+            size: (root.width-40)/3, (root.height-40)/3
+            on_release: root.play(self)
+        Button:
+            id: b3
+            size: (root.width-40)/3, (root.height-40)/3
+            on_release: root.play(self)
